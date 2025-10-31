@@ -28,7 +28,7 @@ It demonstrates **SDK integration**, **API routing** and **secure environment ma
 
 ## 🏗️ Project Structure
 ```bash
-explain-like-im-five/
+explain-it-like-im-five/
 ├── app/
 │   ├── api/
 │   │   └── ask/
