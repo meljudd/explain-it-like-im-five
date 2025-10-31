@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧠 Explain It Like I’m 5  
+*A simple Next.js + OpenAI SDK demo project*
 
-## Getting Started
+## Overview
+**Explain It Like I’m 5** is a lightweight web app that takes any complex text and explains it in plain, simple language.  
+It demonstrates **SDK integration**, **API routing**, and **secure environment management** in **Next.js**.
 
-First, run the development server:
+---
+
+## 🚀 Features
+- ⚙️ **Next.js (App Router)** – modern React framework for server + client components  
+- 🔑 **OpenAI SDK** – securely called from a server route  
+- 🔒 **Environment Variables** for API key management  
+- ✅ **Input Validation** using [Zod](https://zod.dev/)  
+- 🔁 **Basic Retry & Error Handling** for SDK calls  
+- 🎨 **Simple UI** with loading and error states  
+
+---
+
+## 🧰 Tech Stack
+- **Next.js 15+**
+- **OpenAI SDK**
+- **Zod**
+- **React Hooks**
+- **Tailwind CSS**
+
+---
+
+## 🏗️ Project Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+/app
+/api/ask/route.ts → API route using OpenAI SDK
+/page.tsx → Frontend UI
+/lib
+openai.ts → Server-only SDK initialization
+schema.ts → Zod schema for validation
+.env.local → Environment variables
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ⚙️ Setup Instructions
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 1. Clone and install
+```bash
+git clone https://github.com/meljudd/explain-like-im-five.git
+cd explain-like-im-five
+npm install
+```
