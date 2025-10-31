@@ -1,9 +1,9 @@
 # 🧠 Explain It Like I’m 5  
-*A simple Next.js + OpenAI SDK demo project*
+*A simple Next.js + OpenAI SDK project*
 
 ## Overview
 **Explain It Like I’m 5** is a lightweight web app that takes any complex text and explains it in plain, simple language.  
-It demonstrates **SDK integration**, **API routing**, and **secure environment management** in **Next.js**.
+It demonstrates **SDK integration**, **API routing** and **secure environment management** in **Next.js**.
 
 ---
 
@@ -13,7 +13,7 @@ It demonstrates **SDK integration**, **API routing**, and **secure environment m
 - 🔒 **Environment Variables** for API key management  
 - ✅ **Input Validation** using [Zod](https://zod.dev/)  
 - 🔁 **Basic Retry & Error Handling** for SDK calls  
-- 🎨 **Simple UI** with loading and error states  
+- 🎨 **Simple UI** with loading and error states
 
 ---
 
@@ -27,7 +27,6 @@ It demonstrates **SDK integration**, **API routing**, and **secure environment m
 ---
 
 ## 🏗️ Project Structure
-
 ```bash
 /app
 /api/ask/route.ts → API route using OpenAI SDK
@@ -48,3 +47,19 @@ git clone https://github.com/meljudd/explain-like-im-five.git
 cd explain-like-im-five
 npm install
 ```
+
+### 2. Add your API key
+
+Create a `.env.local` file in the root:
+
+```bash
+OPENAI_API_KEY=sk-...your-key-here...
+```
+
+### 3. Run the development server
+
+```bash
+npm run dev
+```
+
+Then open http://localhost:3000 in your browser.
