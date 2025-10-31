@@ -28,13 +28,19 @@ It demonstrates **SDK integration**, **API routing** and **secure environment ma
 
 ## 🏗️ Project Structure
 ```bash
-/app
-/api/ask/route.ts → API route using OpenAI SDK
-/page.tsx → Frontend UI
-/lib
-openai.ts → Server-only SDK initialization
-schema.ts → Zod schema for validation
-.env.local → Environment variables
+explain-like-im-five/
+├── app/
+│   ├── api/
+│   │   └── ask/
+│   │       └── route.ts      # API route using OpenAI SDK
+│   └── page.tsx              # Main frontend UI
+│
+├── lib/
+│   ├── openai.ts             # Server-only SDK initialization
+│   └── schema.ts             # Input validation with Zod
+│
+└── .env.local                # Environment variables (not committed)
+
 ```
 
 ---
