@@ -18,7 +18,7 @@ It demonstrates **SDK integration**, **API routing** and **secure environment ma
 ---
 
 ## 🧰 Tech Stack
-- **Next.js 15+**
+- **Next.js 16+**
 - **OpenAI SDK**
 - **Zod**
 - **React Hooks**
